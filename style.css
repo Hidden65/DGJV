@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.4s;
+    font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+/* ============================fully responsive nav bar========================================== */
+/* ============================fully responsive nav bar========================================== */
+/* ============================fully responsive nav bar========================================== */
+header .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    min-height: 10%;
+    width: 100%;
+    min-height: 12%;
+    z-index: 1001;
+    background: #fff200;
+    /* border-bottom: 2px solid #0c2d48; */
+  }
+  
+  header .navigation img{
+    margin-left: 20px;
+    width: 60%;
+  
+  }
+  
+  header .navigation .logo h1{
+    color: #000000;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  
+  header .navigation .menu-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    margin: auto 10px auto 0;
+  }
+  
+  header .navigation .humbarger {
+    margin-right: 20px;
+    display: none;
+   }
+   
+  header .navigation .humbarger .bar{
+    width: 30px;
+    height: 2px;
+    margin: 7px;
+    background: #000000;
+   }
+  
+  header .navigation .menu-list li a {
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s ease, border 0.3s ease; /* Added transition */
+    text-decoration: none;
+  }
+  header .navigation .menu-list li a:hover {
+    color: #ff0000; /* Change color on hover */
+}
+
+/* Animation to indicate active section */
+header .navigation .menu-list li.active-section a {
+    color: #ff0000; /* Change color of active section */
+}
+/* Animation for active section indicator */
+header .navigation .active-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+   
+    /* height: 5px; */
+    background-color: #005eff; /* Indicator color */
+    transition: transform 0.3s ease, width 0.3s ease; /* Added transition */
+}
+
+  /* ==================== Responsive Section =======================*/
+
+/* =====================Tablet desktop :768px.======================================== */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    header .navigation .menu-list {
+      width: 60%;
+     
+    }
+   header .navigation .menu-list li a{
+      font-size: 1rem;
+    }
+    }
+   /* =================================Large Mobile :480px.========================================= */
+    @media only screen and (max-width: 768px) {
+    header .navigation .menu-list {
+      position: absolute;
+      top: 12vh;
+      min-width: 100%;
+      background: rgba(255, 234, 0, 0.99);
+      text-align: center;
+      display: none;
+      margin: -13px 0px auto 0;
+    }
+     /* header .navigation .menu-list li {
+      display: block;
+    } */
+    header .navigation .menu-list li a {
+      display: block;
+      padding: 20px;
+      transition: color 1s ease, padding 1s ease, background-color 1s ease;
+  
+    }
+    /* header .navigation .menu-list li a:hover{
+      color: #b1d4e0;
+      padding-left: 30px;
+      background: rgba(177, 212, 224, 0.2);
+    } */
+    header .navigation .humbarger{
+      display: block;
+    }
+    
+  }
+
+
+/*================================== Home section===================================== */
+
+.home{
+    width: 100%;
+    /* height: 82vh; */
+    background-color: #ffffff;
+}
+.aboutus{
+    width: 100%;
+    /* height: 82vh; */
+    background-color: #ffffff;
+    margin-top: 1%;
+}
+.about img{
+    margin-left: 10px;
+    width: 50%;
+}
+.home iframe{
+    width: 50%;
+    min-height: 60vh;
+    margin-top: 7%;
+    margin-left:2% ; 
+}
+.hom{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    /* border: 2px solid rgb(0, 0, 0); */
+  
+}
+h1{
+    font-weight: 900;
+    font-size:  50px;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /
+}
+.about p{
+    font-weight: 500;
+    font-size: 20px;
+    border:2px solid #000000;
+    width: 40%;
+    height: 40vh;
+    padding: 1%;
+    text-align:justify;
+}
+.map{
+    display: flex;
+    align-items: center;
+
+}
+.map iframe{
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 50%;
+    height: 50vh;
+
+}
+.map P{
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+/* Medai qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+    
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    
+   
+    .home iframe{
+        width: 95%;
+        min-height: 30vh;
+        margin-top: 25%;
+        margin-left:2% ; 
+    }
+    .hom{
+        display:list-item;
+        /* align-items: center; */
+        /* gap: 50px; */
+    }
+    h1{
+        font-weight: 900;
+        font-size:  20px;
+        /* margin-left: 19px; */
+        text-align: center;
+    }
+    .about img{
+        margin-left: 10px;
+        width: 95%;
+    }
+    .about{
+        display: list-item;
+    }
+    .about p{
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        border:1px solid #000000;
+        width: 90%;
+        height: 25vh;
+        padding-top: 3%;
+        text-align:justify;
+    }
+    .map{
+        display: list-item;
+        align-items: center;
+    
+    }
+    .map iframe{
+        margin-top: 2%;
+        margin-left: 2%;
+        width: 95%;
+        height: 30vh;
+    }
+    .map P{
+        text-align: center;
+        font-weight: 900;
+        font-size: 12px;
+    }
+} 
+
+
+          /*================= carousel======================= */
+         
+
+/* ===============CAROUSEL CSS======================== */
+.carousel {
+    position: relative;
+    top: 90px;
+    width: 100%;
+    z-index: 1;
+   
+}
+.carousel::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: inset 0px 0px 120px 30px rgba(0,0,0,0.35);
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.carousel ul {
+  overflow: auto; 
+  display: flex; 
+  height: 70vw;
+  max-height: 500px;
+  scroll-snap-type: x mandatory;
+  scroll-snap-points-y: repeat(100%);
+  scroll-behavior: smooth;
+  background: gray;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  width: 100%;
+  
+}
+.carousel ul::-webkit-scrollbar {display: none; /* Hide scrollbar for Chrome, Safari and Opera */} 
+.carousel ul li {
+  width: 100%;
+  min-width: 100%; 
+  list-style: none; 
+  background: url(img/c4.jpg) center center / cover no-repeat; 
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.75);
+}
+.carousel ul li div {z-index: 9;}
+.carousel ul li div a {color: white; display: inline-block; background: white; text-shadow: none; color: black; padding: 5px 15px; font-size: 18px; text-decoration: none; border-radius: 4px; margin-top: 10px;}
+.carousel ol {position: absolute; bottom: 15px; display: flex; justify-content: center; left: 50%; transform: translateX(-50%); z-index: 9;}
+.carousel ol li {list-style: none; padding: 0 5px;}
+.carousel ol li a {display: block; height: 10px; width: 10px; border: 2px solid white; background: transparent; border-radius: 100%;}
+.carousel ol li.selected a {background: white;}
+.carousel .prev, .carousel .next {user-select:none; cursor: pointer; font-size: 50px; color: white; position: absolute; left: 0; padding: 15px; top: 50%; transform: translateY(-50%); z-index: 9;}
+.carousel .next {left: auto; right: 0;}
+
+/* RESPONSIVE CSS */
+@media only screen and (max-width: 600px) {
+  /* .carousel ul li div {display: none;} */
+}
+
+/* DEMO CSS */
+.carousel ul li:nth-child(2) {background-image: url(img/c1.jpg);}
+.carousel ul li:nth-child(3) {background-image: url(img/c2.jpg);}
+.carousel ul li:nth-child(4) {background-image: url(img/c3.jpg);}
+p, h2 {margin: 15px auto; padding: 0 15px; max-width: 800px;}
+h2 {margin-top: 0px;}
+              /* footer  */
+.footer{
+    background-color: black;
+    width: 100%;
+    /*  */
+    text-align: center;
+}
+.footer h1{
+    margin-top: 5px;
+    color: #c0c0c0;
+}
+.academic iframe{
+    width: 100%;
+    height: 125vh;
+    border: none;
+    
+    
+}
+
+.alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  /* background-color: #f44336; Red */
+  color: white;
+  /* padding: 10px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it's on top of other content */
+}
+
+/* Style for the image */
+.alert img {
+  height: auto;
+  margin-right: 15px;
+  background-color: #ff0000;
+  padding: 10px;
+}
+
+/* Media query for smaller screens (mobile devices) */
+@media (max-width: 768px) {
+  .alert img {
+    margin-top: 40%;
+    max-width: 110%;
+  }
+}
+
+/* Media query for larger screens (laptops and desktops) */
+@media (min-width: 769px) {
+  
+  .alert img {
+    margin-top: 7%;
+    margin-left: 25%;
+    max-width: 60%; /* Adjust the width for laptops and desktops */
+  }
+}
+  
+  
+      

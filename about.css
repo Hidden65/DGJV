@@ -1,0 +1,23 @@
+
+
+.w3-card-4{
+    margin:1vw;
+    }
+    .grid-container {
+        width: 60%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 0.3fr 0.3fr 3.1fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "spacer spacer spacer"
+        "pic1 pic2 pic3";
+    }
+    .header { grid-area: header; }
+    .nav { grid-area: nav; }
+    .pic1 { grid-area: pic1; }
+    .pic2 { grid-area: pic2; }
+    .pic3 { grid-area: pic3; }
+    
